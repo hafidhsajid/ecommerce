@@ -9,4 +9,4 @@ class barang(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f'{self.name}({self.qty}left)-${self.price} - last update {self.updated_at}<br>'
+        return f'{self.name}({self.qty}left)-${self.price} - last update {self.updated_at}'
