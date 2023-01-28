@@ -6,5 +6,6 @@ from .models import barang
 
 # Create your views here.
 def home(request):
-    model=barang
-    return HttpResponse('barang')
+    model=barang.objects.all()
+    return HttpResponse(model)
+
