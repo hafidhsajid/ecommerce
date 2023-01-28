@@ -6,6 +6,7 @@ class barang(models.Model):
     name = models.CharField(max_length=255)
     qty = models.IntegerField()
     price = models.IntegerField()
+    description = models.TextField(null=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
