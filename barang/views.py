@@ -6,6 +6,7 @@ from .models import barang
 
 # Create your views here.
 def home(request):
-    model=barang.objects.all()
-    return HttpResponse(model)
+    data={}
+    data['product']=barang.objects.all()
+    return render(request,"./product/index.html",data)
 
